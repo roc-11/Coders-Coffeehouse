@@ -15,16 +15,15 @@
 </head>
 
 <body>
-    <header class="form-page-header page-header text-center flex horizontal-center">
+    <header class="form-page-header page-header text-center">
         <div class="vertical-center">
             <h1>Win a years supply of coffee from Coders Coffeehouse</h1>
             <p>Complete our survey for your chance to win!</p>
         </div>
     </header>
 
-    <hr>
 
-    <nav class="black-background text-center">
+    <nav class="black-background text-center text-uppercase">
         <a href="index.html#home" aria-label="Go to the top of the page">Home</a>
         <a href="index.html#drinks" aria-label="Go to drinks menu section">Drinks Menu</a>
         <a href="index.html#contact" aria-label="Go to contact information section">Contact</a>
@@ -35,28 +34,25 @@
 
         <fieldset>
             <legend>Your details</legend>
-            <div class="flex gap-20">
-                <div>
-                    <label for="name-field" class="block-label">Name</label>
-                    <input id="name-field" type="text" name="full_name" placeholder="Your name" required>
-                </div>
-                <div>
-                    <label for="email-field" class="block-label">Email</label>
-                    <input id="email-field" type="email" name="email" placeholder="Your email" required>
-                </div>
-                <div>
-                    <label for="age" class="block-label">Age</label>
-                    <select id="age" name="age" required>
-                        <option value="under-20">Under 20</option>
-                        <option value="20s">20-29</option>
-                        <option value="30s">30-39</option>
-                        <option value="40s">40-49</option>
-                        <option value="50s">50-59</option>
-                        <option value="60+">60+</option>
-                    </select>
-                </div>
+
+            <div class="float-left">
+                <label for="name-field" class="block-label">Name</label>
+                <input id="name-field" type="text" name="full_name" placeholder="Your name" required>
+            </div>
+            <div class="float-left">
+                <label for="email-field" class="block-label">Email</label>
+                <input id="email-field" type="email" name="email" placeholder="Your email" required>
             </div>
 
+            <label for="age" class="block-label">Age</label>
+            <select id="age" name="age" required>
+                <option value="under-20">Under 20</option>
+                <option value="20s">20-29</option>
+                <option value="30s">30-39</option>
+                <option value="40s">40-49</option>
+                <option value="50s">50-59</option>
+                <option value="60+">60+</option>
+            </select>
 
         </fieldset>
 

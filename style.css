@@ -94,6 +94,10 @@ nav>a:hover {
     color: silver;
 }
 
+li {
+    list-style-type: none;
+}
+
 .bold {
     font-weight: bold;
 }
@@ -128,12 +132,19 @@ img {
     top: -15px;
 }
 
+.vertical-center {
+    position: relative;
+    top: 30%;
+}
+
 .one-third-width-column {
     width: 33.33%;
+    display: inline-block;
 }
 
 .two-thirds-width-column {
     width: 66.66%;
+    display: inline-block;
 }
 
 .reasons-box {
@@ -159,12 +170,32 @@ img {
 }
 
 .contact-boxes-container {
-    height: 270px;
+    width: 66%;
+    margin: 0 auto;
 }
 
-.contact-box {
-    flex: 0 250px;
+.contact-box-left {
+    width: 250px;
+    margin-top: -20px;
+    float: left;
+}
+
+.contact-box-right {
+    width: 250px;
+    text-align: right;
+    margin-top: -20px;
+    float: right;
+}
+
+.spacer {
+    clear: both;
+}
+
+.contact-box-center {
+    width: 250px;
     height: 250px;
+    margin: 0 auto;
+    text-align: center;
 }
 
 th,
@@ -226,6 +257,18 @@ input[type=submit] {
     border-radius: 5px;
 }
 
+input[type=reset] {
+
+    margin-top: 20px;
+    margin-left: 0.75rem;
+    padding: 0.75rem;
+    background-color: white;
+    color: #5e361b;
+    border: 1px solid #5e361b;
+    border-radius: 5px;
+}
+
+
 input[type=text],
 input[type=email],
 input[list=coffees] {
@@ -241,7 +284,7 @@ input[list=coffees] {
 }
 
 select {
-    height: 30px;
+    height: 36px;
     width: 100px;
     padding-left: 10px;
 }
@@ -263,6 +306,14 @@ legend {
     font-weight: 600;
     text-transform: uppercase;
     margin: 20px 0 10px 0;
+}
+
+.float-left {
+    float: left;
+}
+
+.float-right {
+    float: right;
 }
 
 label {
@@ -290,37 +341,11 @@ label {
 #map-wrapper {
 
     height: 300px;
-    margin-bottom: 55px;
+    margin-bottom: 107px;
 }
 
 #map {
     height: 100%;
     width: 100%;
     border: none;
-}
-
-/* FLEXBOX CLASSES */
-
-.flex {
-    display: flex;
-}
-
-.horizontal-center {
-    justify-content: center;
-}
-
-.vertical-center {
-    align-self: center;
-}
-
-.vertical-bottom {
-    align-self: flex-end;
-}
-
-.last {
-    order: 1;
-}
-
-.gap-20 {
-    gap: 20px;
 }
