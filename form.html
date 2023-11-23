@@ -4,22 +4,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Complete our survey for your chance to win a years supply of coffee from Coders Coffeehouse.">
+    <meta name="keywords" content="coffeehouse, coffee, developers cafe, free wifi, dublin">
+    <meta name="author" content="Coders Coffeehouse">
     <title>Win a years supply of coffee from Coders Coffeehouse</title>
+
     <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
-    <header>
-        <h1>Win a years supply of coffee from Coders Coffeehouse</h1>
-        <p>Complete our survey for your chance to win!</p>
+    <header class="form-page-header page-header text-center flex horizontal-center">
+        <div class="vertical-center">
+            <h1>Win a years supply of coffee from Coders Coffeehouse</h1>
+            <p>Complete our survey for your chance to win!</p>
+        </div>
     </header>
 
     <hr>
 
-    <nav>
-        <a href="#home" aria-label="Go to the top of the page">Home</a>
-        <a href="#drinks" aria-label="Go to drinks menu section">Drinks Menu</a>
-        <a href="#contact" aria-label="Go to contact information section">Contact</a>
+    <nav class="black-background text-center">
+        <a href="index.html#home" aria-label="Go to the top of the page">Home</a>
+        <a href="index.html#drinks" aria-label="Go to drinks menu section">Drinks Menu</a>
+        <a href="index.html#contact" aria-label="Go to contact information section">Contact</a>
         <a href="form.html" aria-label="Fill in our survey for your chance to win free coffee">Win Free Coffee</a>
     </nav>
 
@@ -27,25 +35,28 @@
 
         <fieldset>
             <legend>Your details</legend>
-
-            <div>
-                <label for="name-field">Name</label>
-                <input id="name-field" type="text" name="full_name" placeholder="Your name" required>
+            <div class="flex gap-20">
+                <div>
+                    <label for="name-field" class="block-label">Name</label>
+                    <input id="name-field" type="text" name="full_name" placeholder="Your name" required>
+                </div>
+                <div>
+                    <label for="email-field" class="block-label">Email</label>
+                    <input id="email-field" type="email" name="email" placeholder="Your email" required>
+                </div>
+                <div>
+                    <label for="age" class="block-label">Age</label>
+                    <select id="age" name="age" required>
+                        <option value="under-20">Under 20</option>
+                        <option value="20s">20-29</option>
+                        <option value="30s">30-39</option>
+                        <option value="40s">40-49</option>
+                        <option value="50s">50-59</option>
+                        <option value="60+">60+</option>
+                    </select>
+                </div>
             </div>
-            <div>
-                <label for="email-field">Email</label>
-                <input id="email-field" type="email" name="email" placeholder="Your email" required>
-            </div>
 
-            <label for="age">Age</label>
-            <select id="age" name="age" required>
-                <option value="under-20">Under 20</option>
-                <option value="20s">20-29</option>
-                <option value="30s">30-39</option>
-                <option value="40s">40-49</option>
-                <option value="50s">50-59</option>
-                <option value="60+">60+</option>
-            </select>
 
         </fieldset>
 
@@ -53,7 +64,7 @@
         <fieldset>
             <legend>Our products</legend>
             <div>
-                <label for="fav-coffee">What is your favourite coffee?</label>
+                <label for="fav-coffee" class="block-label">What is your favourite coffee?</label>
                 <input id="fav-coffee" list="coffees" name="fav-coffee" required>
                 <datalist id="coffees">
                     <option value="Latte">
@@ -117,15 +128,72 @@
 
         <fieldset>
             <legend>Feedback</legend>
-            <label for="feedback">How can we improve your experience with us?</label>
+            <label for="feedback" class="block-label">How can we improve your experience with us?</label>
             <br>
             <textarea id="feedback" rows="4" cols="87" name="feedback"></textarea>
         </fieldset>
+        <div id="terms">
+            <h5 class="underline">OFFICIAL RULES FOR CODERS COFFEEHOUSE PRIZE DRAW</h5>
+            <p>NO PURCHASE NECESSARY TO ENTER OR WIN. A purchase does not improve chances
+                of winning. Subject to all federal, state and local laws and regulations. VOID WHERE
+                PROHIBITED OR RESTRICTED</p>
+            <p><span class="bold">Sponsor: </span>Coders Coffeehouse, 42 Coffeebean street, Dublin</p>
 
+            <p><span class="bold">Eligibility: </span>
+                The Coders Coffeehouse Prize Drawing for 2020 (“Promotion”) is open to all individuals who (i) are 21
+                years of age or older at the
+                time of entry, excluding of Sponsor and its
+                parents, subsidiaries, affiliated companies and agents, and their immediate families or those
+                living in the same household, are not eligible to enter.</p>
 
-        <button type="submit">
-            <strong>Enter prize draw</strong>
-        </button>
+            <p><span class="bold">Promotion Period: </span>
+                Entrants may participate in the Promotion between 00:01am GMT on
+                January 1, 2020 through 23:01AM GMT on December 31, 2020 (“Promotion Period”). Sponsor's
+                server is the official clock for this Promotion.
+            </p>
+
+            <p><span class="bold">Release: </span>
+                BY ENTERING THE PROMOTION, ENTRANTS RELEASE AND HOLD HARMLESS
+                SPONSOR AND ITS PARENTS, SUBSIDIARIES, AND AFFILIATED COMPANIES, AND
+                EACH OF THEIR DIRECTORS, OFFICERS, EMPLOYEES, REPRESENTATIVES,
+                VENDORS, PARTNERS AND AGENTS, FROM ANY AND ALL LIABILITY WHATSOEVER,
+                AND WAIVE ANY AND ALL CAUSES OF ACTION, FOR OR RELATED TO ANY CLAIMS,
+                COSTS, INJURIES, LOSSES, LIABILITIES, OR DAMAGES OF ANY KIND (INCLUDING,
+                WITHOUT LIMITATION, PERSONAL INJURY, DEATH, DAMAGE TO OR DESTRUCTION OF
+                PROPERTY, RIGHTS OF PUBLICITY OR PRIVACY, DEFAMATION OR PORTRAYAL IN A
+                FALSE LIGHT) ARISING OUT OF OR IN CONNECTION WITH THE PROMOTION OR THE
+                ACCEPTANCE, POSSESSION, OR USE OF THE PRIZE, WHETHER UNDER A THEORY OF
+                CONTRACT, WARRANTY, TORT (INCLUDING, WITHOUT LIMITATION, NEGLIGENCE,
+                WHETHER ACTIVE, PASSIVE, OR IMPUTED), STRICT LIABILITY, PRODUCT LIABILITY,
+                CONTRIBUTION, OR ANY OTHER THEORY, TO THE EXTENT PERMITTED BY LAW.
+            </p>
+
+            <p><span class="bold">Winner Notification and Acceptance: </span>
+                The potential winners will be notified on or about
+                January 2nd 2021, via email. Winner may waive the right to receive the prize. The prize is nonassignable
+                and non-transferable. Cash will not be awarded in lieu of the prize, but Sponsor
+                reserves the right to substitute a prize of equal or greater value due to unavailability. The winner
+                is solely responsible for reporting and payment of any federal, state and local taxes and for
+                compliance with all laws associated with the use of the prize. The winner may be asked to
+                execute and return to Sponsor an affidavit of eligibility and a liability release (except where
+                prohibited by law) within fourteen (14) days of attempted notification. Non-compliance within
+                that time period or failure to comply with any term or condition of these Official Rules may, at
+                the sole discretion of Sponsor, result in a winner's disqualification and the selection of an
+                alternate winner. Return of any prize/prize notification as undeliverable will result in
+                disqualification and an alternate winner will be selected. All decisions of Sponsor are final and
+                binding.
+            </p>
+
+            <p><span class="bold">Rules: </span>
+                By entering the Promotion, entrant agrees to abide by the terms and conditions of these
+                Official Rules, which are final on all matters pertaining to the Promotion, and warrants that
+                he/she is eligible to participate in the Promotion. Submission of entry constitutes entrant’s
+                consent for Sponsor to use entrant’s email address for purposes of marketing and promotion of
+                Sponsor’s products and services.
+            </p>
+        </div>
+
+        <input type="submit" class="block-label" value="Enter prize draw">
         <input type="reset" value="Reset Form">
 
     </form>
